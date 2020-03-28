@@ -1,1 +1,1 @@
-![img](screenshots/action_mode.gif)
+<img src="screenshots/action_mode.gif" alt="img" style="zoom:50%;" />

@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     private var actionMode:ActionMode? = null   // ActionMode
     private lateinit var adapter:MyAdapter      // adapter
-    private lateinit var dataList:MutableList<Item>    // 数据集
+    private lateinit var dataList:MutableList<String>    // 数据集
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         dataList = MutableList(20){
-            Item("第${it}项")
+            "第${it}项"
         }
         adapter = MyAdapter(dataList)
         recyclerView.adapter = adapter
